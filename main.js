@@ -2,7 +2,7 @@ $(document).ready(function(){
 if ($(".banner_category").length) {
     $(".banner_category").owlCarousel({
         items: 4,
-        nav: true,
+        nav: false,
         dots: false,
         lazyLoad: true,
         loop: true,

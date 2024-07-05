@@ -113,9 +113,14 @@
             </ul>
         </nav>
         <div class="header-left clearfix">
-            <a href="https://perfumista.vn/" class="logo">
+            <a href="https://perfumista.vn/" class="logo logo_desk">
                 <img src="img/logo.png" alt="logo">
             </a>
+            <div class="logo_mobile">
+                <a href="https://perfumista.vn/" class="logo_mb">
+                    <img src="img/logo_mobile.png" alt="logo">
+                </a>
+            </div>
             <div id="searchForm" accept-charset="utf-8">
                 <input type="text" aria-label="Nhập thông tin bạn cần tìm..." class="form-control" id="search-text" placeholder="Tìm kiếm nước hoa, thương hiệu ..." value="" autocomplete="off">
                 <button type="input" id="search-button" class="search-ico" name="searchbtn">&nbsp;</button>
@@ -123,90 +128,12 @@
                     <!-- search ajax -->
                 </div>
             </div>
+            <div class="bar menu_mobile">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </div>
 
-    <!-- mobile -->
-    <div class="header-mobile container d-md-none">
-        <div class="mobile-header-top d-flex align-items-center justify-content-between">
-            <div class="left-moblie d-flex align-items-center justify-content-between">
-                <div class="back-top-icon d-md-none" id="backPrev">
-                    <i class="fa-regular fa-chevron-left"></i>
-                </div>
-                <div class="mobile-nav mobile-nav-icon">
-                    <i class="fa-solid fa-list-ul"></i>
-                </div>
-
-                <div class="logo-mobile">
-                    <a href="/">
-                        <img class="logo-img"
-                             src="<?= $this->store()->getLogoUri() ?: $this->libs()->img('/images/logo_nhanh.png') ?>">
-                    </a>
-                </div>
-            </div>
-
-            <div class="right-mobile">
-                <ul class="mobile-list-icon">
-                    <li class="mobile-item position-relative">
-                        <?php
-                            if ($user) { ?>
-                        <a href="/profile">
-                                    <span class="mobile-icon">
-                                        <i class="fa-regular fa-user"></i>
-                                    </span>
-                        </a>
-                        <?php } else { ?>
-                        <span class="mobile-user mobile-icon user-icon">
-                                    <i class="fa-regular fa-user"></i>
-                                </span>
-                        <div class="user-account-main box-auth">
-                            <div class="box-auth-wraper">
-                                <!--                                        <p class="box-auth-head">welcome to Lobeo Art</p>-->
-                                <!--                                        <div class="box-auth-redirect">-->
-                                <!--                                            <a href="/user/signup" class="register-button button-auth">Đăng ký</a>-->
-                                <!--                                            <a href="/user/signin" class="login-button button-auth">Đăng nhập</a>-->
-                                <!--                                        </div>-->
-                                <div class="box-auth-social">
-                                    <a href="/user/signin" class="d-block py-2">
-                                        <i class="fa-solid fa-right-to-bracket"></i>
-                                        Đăng nhập
-                                    </a>
-                                    <a href="/user/signup" class="d-block py-2">
-                                        <i class="fa fa-registered" aria-hidden="true"></i>
-                                        Đăng ký
-                                    </a>
-                                    <a href="/user/fbsignin?redirect=/" class="d-block py-2">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                        Đăng nhập bằng Facebook
-                                    </a>
-                                    <a href="/user/ggsignin" class="d-block py-2">
-                                        <i class="fa-brands fa-google-plus-g"></i>
-                                        Đăng nhập bằng google
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <?php } ?>
-                    </li>
-                    <li class="mobile-item position-relative">
-                            <span class="mobile-cart-icon mobile-icon cart-icon">
-                                <i class="fa-regular fa-basket-shopping"></i>
-                            </span>
-                        <span class="number-box cart-total" id="cart-count"><?= $totalProduct ?></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="mobile-header-bottom">
-            <form id="mobile-search-form" class="position-relative" action="/search">
-                <input type="text" class="" name="q" placeholder="Tìm nhanh sản phẩm bạn mong muốn ..."
-                       autocomplete="off">
-                <button type="submit" class="tp_button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-        </div>
-    </div>
 </header>
 
 
@@ -237,6 +164,88 @@
                     </div>
                 </div>
         </div>
+        <nav class="navigation navigation_mb">
+            <ul class="navigation navigation_mb clearfix">
+                <li class=""><a href="https://perfumista.vn/the-gioi-nuoc-hoa" class="tgnh" title="Thế giới nước hoa">
+                    <img src="img/icon.png" alt="icon">
+                    <span>Thế giới<br>nước hoa</span></a>
+                    <ul class="mega_menu">
+                        <div class="list_menu container">
+                            <h3>MOST POPULAR FEMAL PERFUME</h3>
+                            <div class="list_item_menu">
+                                <li>
+                                    <div class="result-item">
+                                        <a href="" clas="box_item">
+                                            <span class="icon icon-gender-men">F</span>
+                                            <img src="https://static.perfumista.vn/uploads/product/2018/November/14/18-abel-in-abbesses.jpg"
+                                                 alt="18 Abel In Abbesses">
+                                            <p class="product-list-name">18 Abel In Abbesses</p>
+                                        </a>
+                                        <a href="" class="pro-item-brand">Made In Pigalle</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="result-item">
+                                        <a href="" clas="box_item">
+                                            <span class="icon icon-gender-men">F</span>
+                                            <img src="https://static.perfumista.vn/uploads/product/2018/November/14/18-abel-in-abbesses.jpg"
+                                                 alt="18 Abel In Abbesses">
+                                            <p class="product-list-name">18 Abel In Abbesses</p>
+                                        </a>
+                                        <a href="" class="pro-item-brand">Made In Pigalle</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="result-item">
+                                        <a href="" clas="box_item">
+                                            <span class="icon icon-gender-men">F</span>
+                                            <img src="https://static.perfumista.vn/uploads/product/2018/November/14/18-abel-in-abbesses.jpg"
+                                                 alt="18 Abel In Abbesses">
+                                            <p class="product-list-name">18 Abel In Abbesses</p>
+                                        </a>
+                                        <a href="" class="pro-item-brand">Made In Pigalle</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="result-item">
+                                        <a href="" clas="box_item">
+                                            <span class="icon icon-gender-men">F</span>
+                                            <img src="https://static.perfumista.vn/uploads/product/2018/November/14/18-abel-in-abbesses.jpg"
+                                                 alt="18 Abel In Abbesses">
+                                            <p class="product-list-name">18 Abel In Abbesses</p>
+                                        </a>
+                                        <a href="" class="pro-item-brand">Made In Pigalle</a>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class=""><a href="https://perfumista.vn/nuoc-hoa-nam" class="tgnh" title="Nước hoa nam"> <img src="img/icon.png" alt="icon"><span>Nước hoa<br>nam</span></a></li>
+
+                <li class=""><a href="https://perfumista.vn/nuoc-hoa-nu" class="tgnh" title="Nước hoa nữ"> <img src="img/icon.png" alt="icon"><span>Nước hoa<br>nữ</span></a></li>
+
+                <li class=""><a href="https://perfumista.vn/tu-van-nuoc-hoa" class="tgnh" title="Tư vấn nước hoa"> <img src="img/icon.png" alt="icon"><span>Tư vấn<br>nước hoa</span></a></li>
+
+                <li class=""><a href="https://perfumista.vn/thuong-hieu-nuoc-hoa" class="tgnh"
+                                title="Thương hiệu nước hoa"> <img src="img/icon.png" alt="icon"><span>Thương hiệu<br>nước hoa</span></a>
+                </li>
+
+                <li class=""><a href="https://perfumista.vn/mui-huong-nuoc-hoa" class="tgnh" title="Mùi hương nước hoa"> <img src="img/icon.png" alt="icon"><span>Mùi hương<br>nước hoa</span></a></li>
+
+                <li class=""><a href="https://perfumista.vn/nhom-nuoc-hoa" class="tgnh" title="Nhóm nước hoa"> <img src="img/icon.png" alt="icon"><span>Nhóm<br>nước hoa</span></a></li>
+
+
+                <li class=""><a href="https://perfumista.vn/bai-viet-nuoc-hoa" class="tgnh" title="Blog nước hoa"> <img src="img/icon.png" alt="icon"><span>Blog<br>nước hoa</span></a></li>
+
+
+                <li style="position:relative">
+                    <a href="https://perfumista.vn/cart/checkout" class="tgnh" title="Giỏ hàng"> <img src="img/icon.png" alt="icon"><span>Giỏ<br>Hàng</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="news_home">
             <h2 class="title">
                 <span>
